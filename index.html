@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopHub - Magazin Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Banner -->
+    <header class="banner">
+        <div class="banner-content">
+            <h1 class="banner-title">🎨 PrintedMagic 3D</h1>
+            <p class="banner-subtitle">Produse Unice Create cu Imprimantă 3D</p>
+        </div>
+        <nav class="banner-nav">
+            <a href="index.html" class="nav-link active">Acasă</a>
+            <a href="about.html" class="nav-link">Despre Noi</a>
+        </nav>
+        <div class="cart-icon-container">
+            <button class="cart-icon" id="cartBtn">
+                <span class="cart-icon-text">🛒</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">        <!-- Banner Slider -->
+        <section class="banner-slider-section">
+            <div class="banner-slider">
+                <div class="slider-container">
+                    <div class="slide active">
+                        <div class="slide-content">
+                            <h2>Produse 3D Premium</h2>
+                            <p>Creații unique cu imprimantă 3D de ultimă generație</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <h2>Design Profesional</h2>
+                            <p>Fiecare produs este gândite cu atenție la detaliu</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <h2>Livrare Rapidă</h2>
+                            <p>Produsele tale ajung la tine în timp scurt</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <h2>Personalizare Completă</h2>
+                            <p>Alege culori, dimensiuni și variante custom</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn slider-prev" id="sliderPrev">❮</button>
+                <button class="slider-btn slider-next" id="sliderNext">❯</button>
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </section>
+
+        <!-- Search Bar -->
+        <section class="search-section">
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="🔍 Cauta produse... (Dragon, Vază, Lampa, etc)"
+                    autocomplete="off"
+                >
+                <div class="search-results" id="searchResults"></div>
+            </div>
+        </section>
+        <!-- Products Grid -->
+        <section class="products-section">
+            <h2 class="section-title">Produse Disponibile</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Produsele vor fi încărcate din JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Product Details Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content modal-lg">
+            <div class="modal-header">
+                <h2 id="productModalTitle">Detalii Produs</h2>
+                <button class="close-modal" id="closeProductBtn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="product-details-container">
+                    <!-- Product Images -->
+                    <div class="product-images">
+                        <div class="main-image" id="mainImage">🐉</div>
+                        <div class="thumbnail-images" id="thumbnailImages">
+                        </div>
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="product-info">
+                        <h2 id="productName">Produs</h2>
+                        <div class="product-price-section">
+                            <span class="product-price-large" id="productPrice">0 RON</span>
+                        </div>
+
+                        <div class="product-specifications">
+                            <div class="spec-item">
+                                <strong>Dimensiuni:</strong>
+                                <span id="productDimensions">-</span>
+                            </div>
+                            <div class="spec-item">
+                                <strong>Material:</strong>
+                                <span id="productMaterial">-</span>
+                            </div>
+                            <div class="spec-item">
+                                <strong>Culori disponibile:</strong>
+                                <div class="colors-list" id="colorsList"></div>
+                            </div>
+                        </div>
+
+                        <div class="product-description-full" id="productFullDescription">
+                        </div>
+
+                        <!-- Quantity and Add to Cart -->
+                        <div class="product-quantity-section">
+                            <label>Cantitate:</label>
+                            <div class="quantity-control">
+                                <button id="decrementBtn" class="quantity-btn-large">−</button>
+                                <input type="number" id="quantityInput" value="1" min="1">
+                                <button id="incrementBtn" class="quantity-btn-large">+</button>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-large" id="addToCartModalBtn">Adaugă în Coș</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Coșul Dumneavoastră</h2>
+                <button class="close-modal" id="closeCartBtn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cartItems">
+                    <p class="empty-cart">Coșul este gol</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="cart-total">
+                    <strong>Total: </strong>
+                    <span id="cartTotal">0 RON</span>
+                </div>
+                <button class="btn btn-primary" id="checkoutBtn">Plasează Comanda</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Date de Contact</h3>
+                <div class="contact-info">
+                    <a href="tel:+40712345678" class="contact-link">
+                        <span class="contact-icon">📱</span>
+                        <span>+40 712 345 678</span>
+                    </a>
+                    <a href="mailto:info@printedmagic.ro" class="contact-link">
+                        <span class="contact-icon">✉️</span>
+                        <span>info@printedmagic.ro</span>
+                    </a>
+                    <a href="https://instagram.com/printedmagic3d" target="_blank" class="contact-link">
+                        <span class="contact-icon">📷</span>
+                        <span>@printedmagic3d</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2026 PrintedMagic 3D. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
