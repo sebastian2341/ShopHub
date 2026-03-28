@@ -2,109 +2,109 @@
 const products = [
     {
         id: 1,
-        name: 'Figurină Dragon 3D',
+        name: 'Machetă de interior 3D',
         price: 89.99,
-        description: 'Figurină dragon detaliată, 15cm, culori customize disponibile. Aceasta este o piesă premium realizată cu imprimantă 3D de ultimă generație. Fiecare detaliu este perfect finisajat manual. Disponibilă în variante de culoare: negru, roșu, albastru și verde.',
-        fullDescription: 'Această magnifică figurină de dragon este creată handmade cu imprimantă 3D și oferă un nivel de detaliu excepțional. Ideală pentru colecționari sau ca element decorativ în orice cameră. Fiecare produs este unic și poate fi personalizat cu culori și materiale diferite.',
-        emoji: '🐉',
-        images: ['🐉', '🐲', '🦎'],
-        colors: ['Negru', 'Roșu', 'Albastru', 'Verde'],
+        description: 'Machetă arhitecturală personalizată, finisaj detaliat. Ideală pentru prezentări și design de portfolio.',
+        fullDescription: 'Această machetă 3D este imprimată cu precizie și se potrivește perfect în medii de expunere și design. Disponibilă în variante multiple și ușor de combinat cu alte produse.',
+        image: 'images/Macheta.jpeg',
+        images: ['images/Macheta.jpeg', 'images/Rame.png'],
+        colors: [],
         dimensions: '15cm x 12cm x 10cm',
         material: 'PLA/PETG 3D Printed'
     },
     {
         id: 2,
-        name: 'Vază Decorativă Modernă',
+        name: 'Ramă foto 3D personalizată',
         price: 45.99,
-        description: 'Vază elegantă cu design geometric, perfectă pentru decorație. Modelul este inspirat din arta modernă și se potrivește cu orice stil interior. Design abstract și plinuri/goluri care creează efecte vizuale interesante.',
-        fullDescription: 'Vaza aceasta cu design geometric modern este realizată prin imprimare 3D cu precizie extrem de ridicată. Perfectă pentru a plasa flori, plante decorative sau pur și simplu ca element de decor. Finish-ul este neted și elegant.',
-        emoji: '🏺',
-        images: ['🏺', '⚱️'],
-        colors: ['Alb', 'Gri', 'Negru', 'Albastru închis'],
+        description: 'Ramă foto imprimată 3D cu design modern, pentru cadouri și decor.',
+        fullDescription: 'Această ramă 3D adaugă un accent profesional oricărui spațiu și este realizată din materiale durabile. Disponibilă în mai multe forme și finisaje.',
+        image: 'images/Rame.png',
+        images: ['images/Rame.png', 'images/Cutie_Banca1.jpeg'],
+        colors: [],
         dimensions: '25cm x 15cm x 15cm',
         material: 'PLA 3D Printed'
     },
     {
         id: 3,
-        name: 'Suport Telefon 3D',
+        name: 'Suport de birou multifuncțional',
         price: 24.99,
-        description: 'Suport telefon ajustabil, design ergonomic, diverse culori. Permite înclinarea perfectă pentru vizionare și video-call.',
-        fullDescription: 'Suportul telefon universal este compatibil cu orice telefon și poate fi ajustat la diferite unghiuri. Design ergonomic care nu rănește ecranul. Perfect pentru desk, birou sau masă.',
-        emoji: '📱',
-        images: ['📱', '📲'],
-        colors: ['Alb', 'Negru', 'Gri'],
+        description: 'Suport 3D pentru birou, perfect pentru organizare și dinamica stilului modern.',
+        fullDescription: 'Design ergonomic, realizat din material rezistent; ideal pentru suport telefon sau accesorii mici.',
+        image: 'images/CutiePorr1.jpeg',
+        images: ['images/CutiePorr1.jpeg', 'images/CutiePorr2.jpeg'],
+        colors: [],
         dimensions: '8cm x 10cm x 12cm',
         material: 'PLA 3D Printed'
     },
     {
         id: 4,
-        name: 'Lampa LED pentru Birou',
+        name: 'Corp lumină 3D artizanal',
         price: 67.99,
-        description: 'Lampă cu LED integrată, 3 niveluri de luminozitate. Design futurist cu control ușor și consum redus de energie.',
-        fullDescription: 'Lampa LED cu design modern și futurist. 3 niveluri de luminozitate réglabile, consum scăzut de energie. Bază stabilă și robust. Perfectă pentru birou, cameră de lucru sau studiu.',
-        emoji: '💡',
-        images: ['💡', '🔆'],
-        colors: ['Alb cald', 'Alb rece', 'Alb natural'],
+        description: 'Lampă sculptată 3D, ambientă și elegantă, pentru birou sau living.',
+        fullDescription: 'Cu design inspirat din natură, oferă iluminare și atmosferă plăcută. Ușor de instalat.',
+        image: 'images/Cutie_CopaculVietii1.jpeg',
+        images: ['images/Cutie_CopaculVietii1.jpeg', 'images/Cutie_CopaculVietii2.jpeg'],
+        colors: [],
         dimensions: '15cm diametru bază x 30cm înălțime',
         material: 'PLA 3D + LED'
     },
     {
         id: 5,
-        name: 'Cutie de Organizare',
+        name: 'Organizator modular 3D',
         price: 34.99,
-        description: 'Cutie compartimentată pentru birou, removable dividers. Ideal pentru organizarea documentelor, pixuri și alte mici obiecte.',
-        fullDescription: 'Cutia de organizare cu compartimente removabile permite personalizarea spațiului intern. Perfectă pentru birou, cameră de studiu sau cameră copilului. Design curat și profesional.',
-        emoji: '📦',
-        images: ['📦', '📫'],
-        colors: ['Alb', 'Gri deschis', 'Negru'],
+        description: 'Organizator de birou 3D cu compartimente pentru accesorii, ideal pentru un workspace curat.',
+        fullDescription: 'Realizat din material rezistent, acest organizator oferă suport ergonomic pentru pixuri, note și accesorii.',
+        image: 'images/CutieBanca4.jpeg',
+        images: ['images/CutieBanca4.jpeg', 'images/CutieBanca5.jpeg'],
+        colors: [],
         dimensions: '30cm x 20cm x 15cm',
         material: 'PLA 3D Printed'
     },
     {
         id: 6,
-        name: 'Miniatură Castel',
+        name: 'Set decorativ de birou',
         price: 79.99,
-        description: 'Castel medieval detaliat cu 20+ piese, set complet. Model de colecție cu detalii minuscule și structură complexă.',
-        fullDescription: 'Miniaturile castelului sunt realizate cu atenție extremă la detaliu. Fiecare peartă, fereastră și turn sunt elaborate. Set complet care poate fi asamblat în diferite configurații. Ideal pentru colecționari.',
-        emoji: '🏰',
-        images: ['🏰', '🏯'],
-        colors: ['Alb/Gri', 'Bej/Maro'],
+        description: 'Set decorativ pentru birou, imitate obiecte artistice cu finisaj 3D premium.',
+        fullDescription: 'Perfect pentru blocuri de note și accesorii, acest set combina utilitatea cu estetica.',
+        image: 'images/Cutie_Justitie1.jpeg',
+        images: ['images/Cutie_Justitie1.jpeg', 'images/Cutie_Justitie2.jpeg'],
+        colors: [],
         dimensions: '25cm x 20cm x 30cm',
         material: 'PLA 3D Printed'
     },
     {
         id: 7,
-        name: 'Raft de Perete Design',
+        name: 'Raft modular de depozitare',
         price: 49.99,
-        description: 'Raft modern pentru cărți, suportă până la 5kg. Design minimalist care se adaptează oricărui interior.',
-        fullDescription: 'Raftul de perete oferă o soluție de depozitare elegantă și funcțională. Poate susține până la 5kg și are un finisaj neted. Instalare ușoară cu cuie sau ancore.',
-        emoji: '📚',
-        images: ['📚', '📖'],
-        colors: ['Alb', 'Gri', 'Negru', 'Stejar'],
+        description: 'Raft modular 3D pentru birou sau raft, suport pentru cărți și accesorii.',
+        fullDescription: 'Realizat din material durabil și design minimalist, potrivit pentru spații moderne.',
+        image: 'images/Cutie_Banca2.jpeg',
+        images: ['images/Cutie_Banca2.jpeg', 'images/Cutie_Banca3.jpeg'],
+        colors: [],
         dimensions: '40cm x 20cm x 10cm',
         material: 'PLA 3D Printed'
     },
     {
         id: 8,
-        name: 'Plantă Decorativă Geo',
+        name: 'Ghiveci decorativ 3D',
         price: 32.99,
-        description: 'Ghiveci geometric pentru plante, impermeabil. Design futurist cu formă regulată și simetrică.',
-        fullDescription: 'Ghiveul geometric este impermeabil și perfect pentru a planta flori sau plante verzi. Design minimalist și modern care se potrivește cu orice stil. Drenaj intern pentru sănătatea plantelor.',
-        emoji: '🌿',
-        images: ['🌿', '🌱', '🍃'],
-        colors: ['Alb', 'Gri', 'Negru', 'Bej'],
+        description: 'Ghiveci geometric imprimat 3D, rezistent și estetic pentru plante mici.',
+        fullDescription: 'Perfect pentru a adăuga un accent modern locuinței, cu drenaj optim și design practic.',
+        image: 'images/Cutie_PNL1.jpeg',
+        images: ['images/Cutie_PNL1.jpeg', 'images/Cutie_PNL2.jpeg'],
+        colors: [],
         dimensions: '15cm x 15cm x 15cm',
         material: 'PLA impermeabilizat'
     },
     {
         id: 9,
-        name: 'Robot Fidget Toy',
+        name: 'Set de sculptură 3D',
         price: 28.99,
-        description: 'Jucărie anti-stres articulate, 100% imprimare 3D. Ideal pentru a relaxa mâinile și mica ta.',
-        fullDescription: 'Robotul fidget toy este o jucărie anti-stres cu múltiplele puncte de articulare. Fiecare mișcare este ușoară și plăcută. Perfect pentru birou, școală sau acasă. Idee excelentă de cadou.',
-        emoji: '🤖',
-        images: ['🤖', '🦾'],
-        colors: ['Alb', 'Negru', 'Roșu', 'Albastru'],
+        description: 'Set decorativ compact pentru birou, format din piese 3D creative.',
+        fullDescription: 'Acest set oferă o notă elegantă zonei de lucru și inspiră creativitate.',
+        image: 'images/Cutie_Justitie2.jpeg',
+        images: ['images/Cutie_Justitie2.jpeg', 'images/Macheta.jpeg'],
+        colors: [],
         dimensions: '10cm x 8cm x 6cm',
         material: 'PLA/ABS 3D Printed'
     }
@@ -112,6 +112,70 @@ const products = [
 
 // Cart Management
 let cart = [];
+let displayedProducts = [];
+let currentProductImages = [];
+let currentProductImageIndex = 0;
+
+const imageFallbackMap = {
+    'Figurină Dragon 3D': ['images/Macheta.jpeg', 'images/Rame.png'],
+    'Vază Decorativă Modernă': ['images/Rame.png', 'images/Cutie_Banca1.jpeg'],
+    'Suport Telefon 3D': ['images/CutiePorr1.jpeg', 'images/CutiePorr2.jpeg'],
+    'Lampa LED pentru Birou': ['images/Cutie_CopaculVietii1.jpeg', 'images/Cutie_CopaculVietii2.jpeg'],
+    'Cutie de Organizare': ['images/CutieBanca4.jpeg', 'images/CutieBanca5.jpeg'],
+    'Miniatură Castel': ['images/Cutie_Justitie1.jpeg', 'images/Cutie_Justitie2.jpeg'],
+    'Raft de Perete Design': ['images/Cutie_Banca2.jpeg', 'images/Cutie_Banca3.jpeg'],
+    'Plantă Decorativă Geo': ['images/Cutie_PNL1.jpeg', 'images/Cutie_PNL2.jpeg'],
+    'Robot Fidget Toy': ['images/rp', 'images/Macheta.jpeg']
+};
+
+function getFallbackImages(productName) {
+    const list = imageFallbackMap[productName];
+    if (list && list.length > 0) {
+        return list;
+    }
+    return ['images/Macheta.jpeg'];
+}
+
+function getSelectedImage(product) {
+    if (product.image) return product.image;
+    if (product.images && product.images.length > 0) return product.images[0];
+    return getFallbackImages(product.name)[0];
+}
+
+function getImageGroupKey(imagePath) {
+    const fileName = imagePath.split('/').pop() || '';
+    const nameWithoutExt = fileName.split('.').slice(0, -1).join('.') || fileName;
+    return nameWithoutExt.replace(/\d+$/, '').toLowerCase();
+}
+
+function mergeProductsByImageName(list) {
+    const groups = {};
+
+    list.forEach(product => {
+        if (!product.images || product.images.length === 0) {
+            return;
+        }
+
+        const key = getImageGroupKey(product.images[0]) || product.name.toLowerCase().replace(/\s+/g, '-');
+
+        if (!groups[key]) {
+            groups[key] = {
+                ...product,
+                id: product.id,
+                images: Array.from(new Set(product.images)),
+            };
+        } else {
+            const existing = groups[key];
+            product.images.forEach(img => {
+                if (!existing.images.includes(img)) {
+                    existing.images.push(img);
+                }
+            });
+        }
+    });
+
+    return Object.values(groups);
+}
 
 // Load cart from localStorage
 function loadCart() {
@@ -178,17 +242,20 @@ function updateCartCount() {
 
 // Display products on main page
 function displayProducts() {
+    displayedProducts = mergeProductsByImageName(products);
     const productsGrid = document.getElementById('productsGrid');
     if (!productsGrid) return;
 
-    productsGrid.innerHTML = products.map(product => `
-        <div class="product-card" onclick="openProductModal(${product.id})">
-            <div class="product-image">${product.emoji}</div>
+    productsGrid.innerHTML = displayedProducts.map((product, index) => `
+        <div class="product-card" style="animation-delay: ${index * 0.05}s" onclick="openProductModal(${product.id})">
+            <div class="product-image">
+                <img src="${getSelectedImage(product)}" alt="${product.name}" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'280\' viewBox=\'0 0 400 280\'%3E%3Crect width=\'400\' height=\'280\' fill=\'%23f2f4f7\'/%3E%3Ctext x=\'50%\' y=\'50%\' fill=\'%23899dac\' font-size=\'14\' font-family=\'Arial, sans-serif\' text-anchor=\'middle\' dy=\'.35em\'%3EImagine indisponibilă%3C/text%3E%3C/svg%3E';">
+            </div>
             <div class="product-content">
                 <h3 class="product-name">${product.name}</h3>
                 <p class="product-description">${product.description}</p>
                 <div class="product-price">${product.price} RON</div>
-                <button class="btn btn-primary btn-small" onclick="addToCart(${product.id}); event.stopPropagation();">
+                <button class="btn btn-primary btn-small" onclick="addToCart(${product.id}); event.stopPropagation();" style="box-shadow: 0 4px 6px rgba(15, 23, 42, 0.07);">
                     Adaugă în Coș
                 </button>
             </div>
@@ -256,30 +323,33 @@ function displayOrderSummary() {
     document.getElementById('summaryTotal').textContent = total + ' RON';
 }
 
-// Show notification
+// Show notification - Modern Toast
 function showCartNotification(message) {
-    // Create notification element
     const notification = document.createElement('div');
+    notification.className = 'toast';
     notification.style.cssText = `
         position: fixed;
-        top: 20px;
-        right: 20px;
-        background: linear-gradient(135deg, #1E3A5F 0%, #2C5282 100%);
+        bottom: 2rem;
+        right: 2rem;
+        background: linear-gradient(135deg, #0F3460 0%, #1E3A8A 100%);
         color: white;
-        padding: 1rem 1.5rem;
-        border-radius: 50px;
-        box-shadow: 0 5px 20px rgba(30, 58, 95, 0.3);
+        padding: 1.5rem 2rem;
+        border-radius: 10px;
+        box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
         z-index: 2000;
-        animation: slideIn 0.4s ease;
+        animation: slideInRight 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         font-weight: 600;
-        border-left: 4px solid #0D6B8C;
+        border-left: 4px solid #00D9FF;
+        font-size: 0.95rem;
+        max-width: 400px;
+        backdrop-filter: blur(10px);
     `;
     notification.textContent = message;
     document.body.appendChild(notification);
 
-    // Remove after 3 seconds
+    // Animate out and remove
     setTimeout(() => {
-        notification.style.animation = 'slideOut 0.3s ease';
+        notification.style.animation = 'slideInLeft 0.3s cubic-bezier(0.4, 0, 0.2, 1) reverse';
         setTimeout(() => notification.remove(), 300);
     }, 3000);
 }
@@ -415,7 +485,7 @@ Vă mulțumim pentru achiziție!
 
 // Database Management - Save order to database
 function saveOrderToDatabase(orderId, formData) {
-    const database = {
+    const databaseEntry = {
         orderId: orderId,
         orderDate: new Date().toLocaleString('ro-RO'),
         customer: {
@@ -442,15 +512,33 @@ function saveOrderToDatabase(orderId, formData) {
         paymentStatus: 'unpaid'
     };
 
-    // Save to localStorage (acting as database)
+    // 1. fallback localStorage for offline use
     let orders = JSON.parse(localStorage.getItem('ordersDatabase') || '[]');
-    orders.push(database);
+    orders.push(databaseEntry);
     localStorage.setItem('ordersDatabase', JSON.stringify(orders));
 
-    // Log to console for verification
-    console.log('✅ Order saved to database:', database);
-    
-    return database;
+    // 2. send to backend API if este disponibil
+    fetch('/api/orders', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(databaseEntry)
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (data && data.success) {
+                console.log('✅ Comanda salvată în DB backend, id:', data.id);
+            } else {
+                console.warn('⚠️ Backend nu a confirmat salvare:', data);
+            }
+        })
+        .catch(error => {
+            console.warn('⚠️ Nu am putut salva in backend, folosesc localStorage:', error);
+        });
+
+    console.log('✅ Order saved in localStorage (fallback):', databaseEntry);
+    return databaseEntry;
 }
 
 // Get all orders from database
@@ -506,13 +594,147 @@ function addAnimationStyles() {
                 opacity: 0;
             }
         }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                box-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 25px rgba(0, 217, 255, 0.6);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        /* Product card reveal animation */
+        .product-card {
+            animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .product-card.scroll-reveal {
+            opacity: 1;
+            animation: slideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .modal-content {
+            animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
     `;
     document.head.appendChild(style);
+}
+
+// Scroll Reveal Animation - Modern Intersection Observer
+function initScrollReveal() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('scroll-reveal');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Observe all product cards
+    document.querySelectorAll('.product-card').forEach(card => observer.observe(card));
+}
+
+// Parallax Effect on Banner - Subtle and Modern
+function initParallaxEffect() {
+    const bannerSlider = document.querySelector('.banner-slider');
+    if (!bannerSlider) return;
+
+    document.addEventListener('mousemove', (e) => {
+        const slides = document.querySelectorAll('.slide');
+        const x = e.clientX / window.innerWidth;
+        const y = e.clientY / window.innerHeight;
+
+        slides.forEach(slide => {
+            slide.style.transform = `translate(${x * 5}px, ${y * 5}px)`;
+        });
+    });
+}
+
+// Smooth Scroll Anchor Links
+function initSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
 }
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
     addAnimationStyles();
+    initScrollReveal();
+    initSmoothScroll();
     loadCart();
     displayProducts();
     displayOrderSummary();
@@ -521,6 +743,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupProductModal();
     setupBannerSlider();
     setupSearchBar();
+    setupFeedbackPopup();
 });
 
 // Product Modal Functions
@@ -642,7 +865,6 @@ function setupSearchBar() {
         // Display results
         searchResults.innerHTML = results.map(product => `
             <div class="search-result-item" onclick="openProductModal(${product.id}); document.getElementById('searchInput').value = ''; document.getElementById('searchResults').classList.remove('show');">
-                <div class="search-result-emoji">${product.emoji}</div>
                 <div class="search-result-info">
                     <div class="search-result-name">${product.name}</div>
                     <div class="search-result-price">${product.price} RON</div>
@@ -661,12 +883,92 @@ function setupSearchBar() {
     });
 }
 
+function isValidUrl(url) {
+    try {
+        new URL(url);
+        return true;
+    } catch {
+        return false;
+    }
+}
+
+function applyFeedbackPopupMode() {
+    const popupCard = document.getElementById('feedbackPopupCard');
+    const popupText = document.getElementById('feedbackPopupModeText');
+
+    if (!popupCard || !popupText) return;
+
+    if (window.innerWidth <= 768) {
+        popupCard.classList.add('mobile-mode');
+        popupCard.classList.remove('desktop-mode');
+        popupText.textContent = 'Versiune mobilă: Apel și email direct din telefon.';
+    } else {
+        popupCard.classList.add('desktop-mode');
+        popupCard.classList.remove('mobile-mode');
+        popupText.textContent = 'Versiune desktop: Opțiuni pentru a te conecta cu noi.';
+    }
+}
+
+function openMailUrl(url) {
+    if (!isValidUrl(url)) {
+        alert('URL de mail invalid. Te rugăm contactează-ne direct la ionutstanoiu15@yahoo.com');
+        return;
+    }
+
+    window.open(url, '_blank');
+}
+
+function setupFeedbackPopup() {
+    const feedbackBtn = document.getElementById('openFeedbackPopup');
+    const popup = document.getElementById('feedbackPopup');
+    const closeBtn = document.getElementById('closeFeedbackPopup');
+    const callBtn = document.getElementById('feedbackCall');
+    const emailBtn = document.getElementById('feedbackEmail');
+
+    applyFeedbackPopupMode();
+    window.addEventListener('resize', applyFeedbackPopupMode);
+
+    if (feedbackBtn) {
+        feedbackBtn.addEventListener('click', () => {
+            if (popup) popup.style.display = 'flex';
+        });
+    }
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            if (popup) popup.style.display = 'none';
+        });
+    }
+
+    if (popup) {
+        popup.addEventListener('click', (e) => {
+            if (e.target === popup) {
+                popup.style.display = 'none';
+            }
+        });
+    }
+
+    if (callBtn) {
+        callBtn.addEventListener('click', () => {
+            window.location.href = 'tel:0746468138';
+        });
+    }
+
+    if (emailBtn) {
+        emailBtn.addEventListener('click', () => {
+            openMailUrl('https://compose.mail.yahoo.com/?to=ionutstanoiu15@yahoo.com');
+        });
+    }
+}
+
 function openProductModal(productId) {
-    const product = products.find(p => p.id === productId);
+    const product = displayedProducts.find(p => p.id === productId);
     if (!product) return;
 
     currentProductId = productId;
     currentQuantity = 1;
+    currentProductImages = product.images || [product.image].filter(Boolean);
+    currentProductImageIndex = 0;
 
     // Populate modal
     document.getElementById('productModalTitle').textContent = product.name;
@@ -677,18 +979,21 @@ function openProductModal(productId) {
     document.getElementById('productFullDescription').textContent = product.fullDescription;
     document.getElementById('quantityInput').value = 1;
 
-    // Display main image
-    document.getElementById('mainImage').textContent = product.emoji;
+    // Display main image with nav arrows
+    const mainImage = document.getElementById('mainImage');
+    mainImage.innerHTML = `
+        <button class="image-nav prev" onclick="slideProductImage(-1)">❮</button>
+        <img src="${currentProductImages[0]}" alt="${product.name}" loading="lazy">
+        <button class="image-nav next" onclick="slideProductImage(1)">❯</button>
+    `;
 
     // Display thumbnail images
     const thumbnailContainer = document.getElementById('thumbnailImages');
-    thumbnailContainer.innerHTML = product.images.map((img, index) => `
-        <div class="thumbnail" onclick="changeThumbnail('${img}', event)">${img}</div>
+    thumbnailContainer.innerHTML = currentProductImages.map((img, index) => `
+        <div class="thumbnail ${index === 0 ? 'active' : ''}" onclick="changeThumbnail(${index})">
+            <img src="${img}" alt="Thumbnail ${index + 1}" loading="lazy">
+        </div>
     `).join('');
-
-    // Display colors
-    const colorsList = document.getElementById('colorsList');
-    colorsList.innerHTML = product.colors.map(color => `<span class="color-badge">${color}</span>`).join('');
 
     // Show similar products at bottom
     displaySimilarProducts(productId);
@@ -698,14 +1003,25 @@ function openProductModal(productId) {
     productModal.classList.add('show');
 }
 
-function changeThumbnail(emoji, event) {
-    document.getElementById('mainImage').textContent = emoji;
-    
-    // Highlight selected thumbnail
-    document.querySelectorAll('.thumbnail').forEach(thumb => {
-        thumb.classList.remove('active');
+function changeThumbnail(index) {
+    if (!currentProductImages || currentProductImages.length === 0) return;
+    currentProductImageIndex = index;
+    const src = currentProductImages[index];
+    const mainImage = document.getElementById('mainImage');
+    mainImage.innerHTML = `
+        <button class="image-nav prev" onclick="slideProductImage(-1)">❮</button>
+        <img src="${src}" alt="Produs" loading="lazy">
+        <button class="image-nav next" onclick="slideProductImage(1)">❯</button>
+    `;
+    document.querySelectorAll('.thumbnail').forEach((thumb, idx) => {
+        thumb.classList.toggle('active', idx === index);
     });
-    event.target.classList.add('active');
+}
+
+function slideProductImage(direction) {
+    if (!currentProductImages || currentProductImages.length === 0) return;
+    currentProductImageIndex = (currentProductImageIndex + direction + currentProductImages.length) % currentProductImages.length;
+    changeThumbnail(currentProductImageIndex);
 }
 
 function setupProductModal() {
@@ -775,7 +1091,7 @@ function displaySimilarProducts(excludeProductId) {
     }
 
     // Get random products (exclude current)
-    const similar = products
+    const similar = displayedProducts
         .filter(p => p.id !== excludeProductId)
         .sort(() => Math.random() - 0.5)
         .slice(0, 4);
@@ -784,7 +1100,7 @@ function displaySimilarProducts(excludeProductId) {
     if (suggestedGrid) {
         suggestedGrid.innerHTML = similar.map(product => `
             <div class="product-card" onclick="openProductModal(${product.id})">
-                <div class="product-image">${product.emoji}</div>
+                <div class="product-image"><img src="${getSelectedImage(product)}" alt="${product.name}" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'280\' viewBox=\'0 0 400 280\'%3E%3Crect width=\'400\' height=\'280\' fill=\'%23f2f4f7\'/%3E%3Ctext x=\'50%\' y=\'50%\' fill=\'%23899dac\' font-size=\'14\' font-family=\'Arial, sans-serif\' text-anchor=\'middle\' dy=\'.35em\'%3EImagine indisponibilă%3C/text%3E%3C/svg%3E';"></div>
                 <div class="product-content">
                     <h3 class="product-name">${product.name}</h3>
                     <p class="product-description">${product.description}</p>
