@@ -32,7 +32,7 @@
                 <div class="slider-container">
                     <div class="slide active">
                         <div class="slide-content">
-                            <h2>Produse 3D Premium</h2>
+                            <h2>Produse 3d premium</h2>
                             <p>Creații unique cu imprimantă 3D de ultimă generație</p>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                     type="text" 
                     id="searchInput" 
                     class="search-input" 
-                    placeholder="🔍 Cauta produse... (Dragon, Vază, Lampa, etc)"
+                    placeholder="🔍 Cauta produse..."
                     autocomplete="off"
                 >
                 <div class="search-results" id="searchResults"></div>
@@ -81,6 +81,25 @@
                 <!-- Produsele vor fi încărcate din JavaScript -->
             </div>
         </section>
+
+        <!-- Feedback CTA -->
+        <section class="feedback-section" id="feedbackSection">
+            <h2 class="section-title">Nu te-am convins?</h2>
+            <p>Dacă ai o idee sau un produs special în minte, spune-ne și îl facem realitate.</p>
+            <button id="openFeedbackPopup" class="btn btn-secondary">Spune-ne ce ți-ai dori</button>
+        </section>
+
+        <div class="popup-overlay" id="feedbackPopup" style="display:none;">
+            <div class="popup-card" id="feedbackPopupCard">
+                <h3>Spune-ne ce ți-ai dori</h3>
+                <p id="feedbackPopupModeText">Alege una din opțiuni:</p>
+                <div class="popup-actions">
+                    <button id="feedbackCall" class="btn btn-primary">Apel</button>
+                    <button id="feedbackEmail" class="btn btn-secondary">Scrie-ne</button>
+                </div>
+                <button id="closeFeedbackPopup" class="popup-close">Închide</button>
+            </div>
+        </div>
     </main>
 
     <!-- Product Details Modal -->
@@ -114,10 +133,6 @@
                             <div class="spec-item">
                                 <strong>Material:</strong>
                                 <span id="productMaterial">-</span>
-                            </div>
-                            <div class="spec-item">
-                                <strong>Culori disponibile:</strong>
-                                <div class="colors-list" id="colorsList"></div>
                             </div>
                         </div>
 
@@ -169,9 +184,9 @@
             <div class="footer-section">
                 <h3>Date de Contact</h3>
                 <div class="contact-info">
-                    <a href="tel:+40712345678" class="contact-link">
+                    <a href="tel:+40746468138" class="contact-link">
                         <span class="contact-icon">📱</span>
-                        <span>+40 712 345 678</span>
+                        <span>+40 746 468 138</span>
                     </a>
                     <a href="mailto:info@printedmagic.ro" class="contact-link">
                         <span class="contact-icon">✉️</span>
