@@ -2084,43 +2084,17 @@ input, textarea, select { font-family: var(--font-body); outline: none; }
   }
 
   .hamburger-btn {
-    display: flex;
-    align-self: center;
-  }
-
-  .navbar-nav {
     display: none;
   }
 
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
   .navbar-nav-mobile {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: rgba(255,255,255,0.95);
-    backdrop-filter: blur(10px);
-    flex-direction: column;
-    gap: 0;
-    padding: 1rem 0;
-    box-shadow: var(--shadow);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: var(--transition);
-    border-radius: 0 0 var(--radius) var(--radius);
-  }
-
-  .navbar-nav-mobile.open {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-
-  .navbar-nav-mobile .nav-link {
-    width: 100%;
-    padding: 0.8rem 1.5rem;
-    text-align: center;
-    border-bottom: 1px solid var(--border);
+    display: none;
   }
 
   .navbar-nav-mobile .nav-link:last-child {
@@ -2266,7 +2240,8 @@ input, textarea, select { font-family: var(--font-body); outline: none; }
   }
 
   .nav-link {
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
   }
 
   .navbar-actions {
