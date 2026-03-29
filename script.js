@@ -305,6 +305,34 @@ function initNavbar() {
     if (!navbar) return;
     navbar.classList.toggle('scrolled', window.scrollY > 40);
   });
+
+  // Hamburger menu
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const navbarNav = document.querySelector('.navbar-nav');
+  if (hamburgerBtn && navbarNav) {
+    hamburgerBtn.addEventListener('click', () => {
+      hamburgerBtn.classList.toggle('active');
+      navbarNav.classList.toggle('open');
+      hamburgerBtn.setAttribute('aria-expanded', hamburgerBtn.classList.contains('active'));
+    });
+
+    // Close menu when clicking outside or on a link
+    document.addEventListener('click', e => {
+      if (!hamburgerBtn.contains(e.target) && !navbarNav.contains(e.target)) {
+        hamburgerBtn.classList.remove('active');
+        navbarNav.classList.remove('open');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    navbarNav.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburgerBtn.classList.remove('active');
+        navbarNav.classList.remove('open');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
 }
 
 // ===== SLIDER =====
