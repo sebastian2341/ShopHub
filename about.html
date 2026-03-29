@@ -1,304 +1,266 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Despre Noi - PrintedMagic 3D</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .about-section {
-            background: white;
-            padding: 3rem 2rem;
-            margin-bottom: 2rem;
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-        }
-
-        .about-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .about-header h1 {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            animation: slideDown 0.6s ease;
-        }
-
-        .about-content {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: var(--text-color);
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .feature-card {
-            background: linear-gradient(135deg, #E8EEF5, #F5F7FA);
-            padding: 2rem;
-            border-radius: 10px;
-            border-left: 4px solid var(--primary-color);
-            transition: var(--transition);
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 35px rgba(30, 58, 95, 0.15);
-        }
-
-        .feature-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-
-        .feature-card p {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        .values-section {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: white;
-            padding: 3rem 2rem;
-            border-radius: 10px;
-            margin: 2rem 0;
-        }
-
-        .values-section h2 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        .values-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .value-item {
-            padding: 1.5rem;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            backdrop-filter: blur(10px);
-        }
-
-        .value-item h4 {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .team-section {
-            margin-top: 3rem;
-        }
-
-        .team-section h2 {
-            font-size: 2rem;
-            color: var(--dark-color);
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        .cta-section {
-            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
-            color: white;
-            padding: 3rem 2rem;
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 3rem;
-        }
-
-        .cta-section h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .cta-section p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-        }
-
-        .cta-btn {
-            display: inline-block;
-            background: white;
-            color: var(--primary-color);
-            padding: 0.75rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: var(--transition);
-        }
-
-        .cta-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Despre Noi — PrintedMagic 3D</title>
+  <meta name="description" content="Povestea noastră, valorile noastre, și pasiunea pentru imprimarea 3D.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Banner -->
-    <header class="banner">
-        <div class="banner-content">
-            <h1 class="banner-title">🎨 PrintedMagic 3D</h1>
-            <p class="banner-subtitle">Despre Noi - Innovație prin Tehnologie 3D</p>
-        </div>
-        <nav class="banner-nav">
-            <a href="index.html" class="nav-link">Acasă</a>
-            <a href="about.html" class="nav-link active">Despre Noi</a>
-        </nav>
-        <div class="cart-icon-container">
-            <a href="index.html" class="back-link">← Înapoi</a>
-        </div>
-    </header>
 
-    <!-- Main Content -->
-    <main class="container">
-        <!-- About Header -->
-        <section class="about-section">
-            <div class="about-header">
-                <h1>🌟 Bine ați venit la PrintedMagic 3D!</h1>
-                <p style="font-size: 1.2rem; color: #666;">Unde inovația întâlnește creativitatea prin tehnologia imprimantei 3D</p>
-            </div>
+  <!-- NAVBAR -->
+  <header class="navbar" role="banner">
+    <a href="index.html" class="navbar-brand" aria-label="PrintedMagic 3D acasă">
+      <span class="navbar-logo">Printed<span>Magic</span> 3D</span>
+      <span class="navbar-tagline">Handmade cu Imprimantă 3D</span>
+    </a>
+    <nav class="navbar-nav" role="navigation" aria-label="Navigare principală">
+      <a href="index.html" class="nav-link">Acasă</a>
+      <a href="about.html" class="nav-link active" aria-current="page">Despre Noi</a>
+    </nav>
+    <div class="navbar-actions">
+      <a href="index.html" class="back-link">← Înapoi la Produse</a>
+    </div>
+  </header>
 
-            <div class="about-content">
-                <p>
-                    <strong>PrintedMagic 3D</strong> este un magazin online specializat în vânzarea de produse unice, create handmade cu ajutorul tehnologiei avansate de imprimare 3D. Fiecare articol din colecția noastră este o mică capodoperă, proiectată cu atenție și imprimată cu precizie.
-                </p>
-                <p style="margin-top: 1rem;">
-                    Pasionați de design și inovație, am decis să transformăm ideile în realitate. Platforma noastră oferă o gamă variată de produse care combină funcționalitatea cu estetica modernă.
-                </p>
-            </div>
-        </section>
+  <!-- ABOUT HERO -->
+  <section class="about-hero">
+    <div class="container">
+      <div class="section-eyebrow animate-fadein">Povestea Noastră</div>
+      <h1 class="about-hero-title animate-slideup">Unde <span>inovația</span> întâlnește<br>creativitatea</h1>
+      <p class="about-hero-sub animate-fadein delay-2">PrintedMagic 3D — un atelier digital unde ideile prind formă, literalmente.</p>
+    </div>
+  </section>
 
-        <!-- Features -->
-        <section class="about-section">
-            <h2 style="font-size: 2rem; color: var(--dark-color); margin-bottom: 2rem; text-align: center;">De ce să alegi PrintedMagic 3D?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>🎨 Design Unic</h3>
-                    <p>Fiecare produs este special, cu design personalizabil și culori la alegere. Poți comanda articole custom după dorințele tale.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>⚙️ Calitate Premium</h3>
-                    <p>Folosim materiale și echipamente de cea mai bună calitate. Fiecare produs este testat și inspectat înainte de a fi expediat.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🚚 Livrare Rapidă</h3>
-                    <p>Cu servicii de curierat rapid și ambalaj profesional, produsele tale vor ajunge în condiții perfecte în timp scurt.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>💚 Ecologic</h3>
-                    <p>Procesul de imprimare 3D este eco-friendly. Irosim minimal și folosim materiale reciclabile și biodegradabile.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🎁 Perfect pentru Cadouri</h3>
-                    <p>Fie pentru aniversări, nunți sau dumnezeu știe ce ocazie specială, produsele noastre sunt cadouri unice și memorabile.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>💬 Customer Support</h3>
-                    <p>Echipa noastră este mereu disponibilă pentru a răspunde la întrebări și pentru a ajuta cu orice problemă.</p>
-                </div>
-            </div>
-        </section>
+  <!-- MAIN CONTENT -->
+  <main>
 
-        <!-- Values -->
-        <section class="values-section">
-            <h2>Valorile Noastre</h2>
-            <div class="values-list">
-                <div class="value-item">
-                    <h4>✨ Inovație</h4>
-                    <p>Mereu căutăm modalități noi și creative de a folosi tehnologia 3D</p>
-                </div>
-                <div class="value-item">
-                    <h4>🎯 Calitate</h4>
-                    <p>Excelența în fiecare detaliu este promisiunea noastră către voi</p>
-                </div>
-                <div class="value-item">
-                    <h4>🤝 Transparență</h4>
-                    <p>Comunicare deschisă și relații sincere cu toți clienții</p>
-                </div>
-                <div class="value-item">
-                    <h4>🌍 Sustenabilitate</h4>
-                    <p>Producem responsabil, gândind la viitorul planetei</p>
-                </div>
-            </div>
-        </section>
+    <section class="about-content-section">
+      <div class="container">
 
-        <!-- Products Info -->
-        <section class="about-section team-section">
-            <h2>Colecția Noastră de Produse</h2>
-            <p style="font-size: 1.1rem; color: #666; margin-top: 1rem;">
-                Oferta noastră cuprinde o varietate impresionantă de produse create handmade cu imprimanta 3D:
+        <!-- Grid 1 -->
+        <div class="about-grid scroll-reveal">
+          <div class="about-visual animate-float">🎨</div>
+          <div class="about-text-block">
+            <div class="about-text-label">Cine suntem</div>
+            <h2 class="about-text-title">Pasionați de design și tehnologie</h2>
+            <p class="about-text-body">
+              <strong>PrintedMagic 3D</strong> este un magazin online specializat în vânzarea de produse unice, create handmade cu ajutorul tehnologiei avansate de imprimare 3D. Fiecare articol din colecția noastră este o mică capodoperă, proiectată cu atenție și imprimată cu precizie.
             </p>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
-                <div style="padding: 1.5rem; background: #F5F7FA; border-radius: 8px;">
-                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">🐉 Figurine Decorative</h4>
-                    <p>Figurine detaliate, miniaturi, personaje, și sculpturi artistice</p>
-                </div>
-                <div style="padding: 1.5rem; background: #F5F7FA; border-radius: 8px;">
-                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">🏺 Vaze și Decorații</h4>
-                    <p>Vaze decorative, decorații pentru casă, și elemente de design interior</p>
-                </div>
-                <div style="padding: 1.5rem; background: #F5F7FA; border-radius: 8px;">
-                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">📦 Organizare și Stocare</h4>
-                    <p>Cutii de organizare, suporturi, și soluții de stocare personalizate</p>
-                </div>
-                <div style="padding: 1.5rem; background: #F5F7FA; border-radius: 8px;">
-                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">🎮 Jucării și Jocuri</h4>
-                    <p>Jucării mecanice, puzzle 3D, fidget toys, și articole de leisure</p>
-                </div>
-                <div style="padding: 1.5rem; background: #F5F7FA; border-radius: 8px;">
-                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">💡 Accesorii pentru Birou</h4>
-                    <p>Lămpi de birou, suporturi pentru telefon, și alte gadget-uri utile</p>
-                </div>
-                <div style="padding: 1.5rem; background: #F5F7FA; border-radius: 8px;">
-                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">🎁 Produse Personalizate</h4>
-                    <p>Cadouri custom, articole cu inițiale, și produse made-to-order</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <h2>Gata să descoperi magia imprimării 3D?</h2>
-            <p>Exploreaza colecția noastră și găseste produsul perfect pentru tine!</p>
-            <a href="index.html" class="cta-btn">Vezi Toate Produsele</a>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Date de Contact</h3>
-                <div class="contact-info">
-                    <a href="tel:+40712345678" class="contact-link">
-                        <span class="contact-icon">📱</span>
-                        <span>+40 712 345 678</span>
-                    </a>
-                    <a href="mailto:info@printedmagic.ro" class="contact-link">
-                        <span class="contact-icon">✉️</span>
-                        <span>info@printedmagic.ro</span>
-                    </a>
-                    <a href="https://instagram.com/printedmagic3d" target="_blank" class="contact-link">
-                        <span class="contact-icon">📷</span>
-                        <span>@printedmagic3d</span>
-                    </a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <p>&copy; 2026 PrintedMagic 3D. Toate drepturile rezervate.</p>
-            </div>
+            <p class="about-text-body" style="margin-top:1rem">
+              Pasionați de design și inovație, am decis să transformăm ideile în realitate. Platforma noastră oferă o gamă variată de produse care combină funcționalitatea cu estetica modernă.
+            </p>
+          </div>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <!-- Grid 2 -->
+        <div class="about-grid reverse scroll-reveal delay-2">
+          <div class="about-visual animate-float" style="animation-delay:1.5s">⚙️</div>
+          <div class="about-text-block">
+            <div class="about-text-label">Procesul Nostru</div>
+            <h2 class="about-text-title">De la idee la obiect în câteva ore</h2>
+            <p class="about-text-body">
+              Folosim imprimante 3D FDM și SLA de ultimă generație, cu filamente de calitate premium importate direct de la producători certificați. Fiecare model este designat în-house, testat pentru durabilitate și finisaj, înainte de a ajunge la tine.
+            </p>
+            <p class="about-text-body" style="margin-top:1rem">
+              Procesul nostru eco-friendly minimizează risipa de material — imprimăm exact ce ai nevoie, nimic mai mult.
+            </p>
+          </div>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="section-header scroll-reveal" style="margin-top:2rem">
+          <div class="section-eyebrow">De ce să alegi</div>
+          <h2 class="section-title">PrintedMagic 3D</h2>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card scroll-reveal delay-1">
+            <div class="feature-icon">🎨</div>
+            <h3 class="feature-title">Design Unic</h3>
+            <p class="feature-desc">Fiecare produs este special, cu design personalizabil și culori la alegere.</p>
+          </div>
+          <div class="feature-card scroll-reveal delay-2">
+            <div class="feature-icon">⚙️</div>
+            <h3 class="feature-title">Calitate Premium</h3>
+            <p class="feature-desc">Materiale și echipamente de cea mai bună calitate, testate înainte de expediere.</p>
+          </div>
+          <div class="feature-card scroll-reveal delay-3">
+            <div class="feature-icon">🚚</div>
+            <h3 class="feature-title">Livrare Rapidă</h3>
+            <p class="feature-desc">Curierat rapid și ambalaj profesional — produsele ajung în condiții perfecte.</p>
+          </div>
+          <div class="feature-card scroll-reveal delay-1">
+            <div class="feature-icon">💚</div>
+            <h3 class="feature-title">Ecologic</h3>
+            <p class="feature-desc">Irosim minimal și folosim materiale reciclabile și biodegradabile.</p>
+          </div>
+          <div class="feature-card scroll-reveal delay-2">
+            <div class="feature-icon">🎁</div>
+            <h3 class="feature-title">Perfect Cadou</h3>
+            <p class="feature-desc">Produse unice și memorabile pentru orice ocazie specială.</p>
+          </div>
+          <div class="feature-card scroll-reveal delay-3">
+            <div class="feature-icon">💬</div>
+            <h3 class="feature-title">Suport Dedicat</h3>
+            <p class="feature-desc">Echipa noastră este mereu disponibilă pentru orice întrebare.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VALUES BAND -->
+    <div class="values-band">
+      <div class="values-band-inner">
+        <h2 class="values-band-title">Valorile Noastre</h2>
+        <div class="values-grid">
+          <div class="value-card scroll-reveal delay-1">
+            <div class="value-icon">✨</div>
+            <div class="value-title">Inovație</div>
+            <p class="value-desc">Mereu căutăm modalități noi și creative de a folosi tehnologia 3D</p>
+          </div>
+          <div class="value-card scroll-reveal delay-2">
+            <div class="value-icon">🎯</div>
+            <div class="value-title">Calitate</div>
+            <p class="value-desc">Excelența în fiecare detaliu este promisiunea noastră</p>
+          </div>
+          <div class="value-card scroll-reveal delay-3">
+            <div class="value-icon">🤝</div>
+            <div class="value-title">Transparență</div>
+            <p class="value-desc">Comunicare deschisă și relații sincere cu toți clienții</p>
+          </div>
+          <div class="value-card scroll-reveal delay-4">
+            <div class="value-icon">🌍</div>
+            <div class="value-title">Sustenabilitate</div>
+            <p class="value-desc">Producem responsabil, gândind la viitorul planetei</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA BAND -->
+    <div class="container">
+      <div class="cta-band scroll-reveal">
+        <div class="section-eyebrow">Hai să colaborăm</div>
+        <h2 class="cta-band-title">Ești gata să ne descoperi?</h2>
+        <p class="cta-band-sub">Explorează colecția și găsește produsul perfect — sau comandă ceva complet personalizat.</p>
+        <a href="index.html" class="btn btn-primary btn-lg">Vezi Toate Produsele →</a>
+      </div>
+
+      <!-- REVIEW SECTION -->
+      <section class="review-section" id="reviewSection" aria-label="Recenzii">
+        <h2 class="review-section-title scroll-reveal">Spune-ne cum a fost experiența ta!</h2>
+        <p class="review-section-sub scroll-reveal delay-1">Recenziile tale ne ajută să creștem și să devenim mai buni. ❤️</p>
+
+        <!-- Review Form -->
+        <div class="review-form-card scroll-reveal delay-2">
+          <form id="reviewForm" novalidate>
+
+            <div class="form-group" style="margin-bottom:1.2rem">
+              <label class="form-label" for="reviewName">Numele Tău *</label>
+              <input class="form-input" type="text" id="reviewName" required placeholder="Ex: Maria Ionescu">
+            </div>
+
+            <div class="form-group" style="margin-bottom:1.2rem">
+              <label class="form-label" for="reviewProduct">Produsul Achiziționat *</label>
+              <input class="form-input" type="text" id="reviewProduct" required placeholder="Ex: Dragon Articulat">
+            </div>
+
+            <div class="form-group" style="margin-bottom:1.2rem">
+              <label class="form-label">Rating *</label>
+              <div class="star-rating" role="group" aria-label="Rating de la 1 la 5 stele">
+                <span class="star" data-val="1" role="button" tabindex="0" aria-label="1 stea">★</span>
+                <span class="star" data-val="2" role="button" tabindex="0" aria-label="2 stele">★</span>
+                <span class="star" data-val="3" role="button" tabindex="0" aria-label="3 stele">★</span>
+                <span class="star" data-val="4" role="button" tabindex="0" aria-label="4 stele">★</span>
+                <span class="star" data-val="5" role="button" tabindex="0" aria-label="5 stele">★</span>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom:1.2rem">
+              <label class="form-label" for="reviewComment">Comentariu (Opțional)</label>
+              <textarea class="form-textarea" id="reviewComment" placeholder="Descrie experiența ta cu produsul..." rows="3"></textarea>
+            </div>
+
+            <div class="form-group" style="margin-bottom:1.5rem">
+              <label class="form-label">Fotografii (max. 3)</label>
+              <div class="img-upload-zone">
+                <input type="file" id="reviewImages" accept="image/*" multiple>
+                <div class="img-upload-icon">📷</div>
+                <p class="img-upload-text">Click pentru a adăuga fotografii<br><small>JPG, PNG, WEBP — max. 3 imagini</small></p>
+              </div>
+              <div class="review-preview-imgs" id="imagePreview"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg">Trimite Recenzia →</button>
+          </form>
+        </div>
+
+        <!-- Reviews List -->
+        <div class="reviews-list" id="reviewsList" aria-label="Recenzii clienți">
+          <!-- Sample review -->
+          <div class="review-card">
+            <div class="review-card-header">
+              <div class="review-avatar">A</div>
+              <div class="review-meta">
+                <div class="review-author">Alexandru M.</div>
+                <div class="review-product">Dragon Articulat</div>
+              </div>
+            </div>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">Calitate extraordinară! Dragonul a ajuns perfect ambalat, detaliile sunt incredibil de fine. L-am primit ca cadou și toată lumea îl admiră. Recomand cu toată inima!</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card-header">
+              <div class="review-avatar">I</div>
+              <div class="review-meta">
+                <div class="review-author">Ioana P.</div>
+                <div class="review-product">Vază Geometrică</div>
+              </div>
+            </div>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">Superb! Vaza arată ca o sculptură de artă modernă. Livrarea a fost în 3 zile, ambalajul impecabil. Voi comanda cu siguranță și altceva.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-name">Printed<span>Magic</span> 3D</div>
+          <p class="footer-brand-desc">Produse unice create cu pasiune, precizie și tehnologie de ultimă generație.</p>
+        </div>
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <div class="footer-links">
+            <a href="tel:+40746468138" class="footer-link"><span class="link-icon">📱</span> +40 746 468 138</a>
+            <a href="mailto:info@printedmagic.ro" class="footer-link"><span class="link-icon">✉️</span> info@printedmagic.ro</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Urmărește-ne</div>
+          <div class="social-row">
+            <a href="https://instagram.com/printedmagic3d" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">📸</a>
+            <a href="https://facebook.com/printedmagic3d" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">👍</a>
+            <a href="https://tiktok.com/@printedmagic3d" target="_blank" rel="noopener" class="social-btn" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 PrintedMagic 3D. Toate drepturile rezervate.</p>
+        <a href="index.html" class="footer-link">Acasă</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

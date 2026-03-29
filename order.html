@@ -1,121 +1,166 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plasare Comandă - ShopHub</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalizare Comandă — PrintedMagic 3D</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Banner -->
-    <header class="banner">
-        <div class="banner-content">
-            <h1 class="banner-title">🎨 PrintedMagic 3D</h1>
-            <p class="banner-subtitle">Finalizare Comandă</p>
-        </div>
-        <nav class="banner-nav">
-            <a href="index.html" class="nav-link">Acasă</a>
-            <a href="about.html" class="nav-link">Despre Noi</a>
-        </nav>
-        <div class="cart-icon-container">
-            <a href="index.html" class="back-link">← Înapoi la Produse</a>
-        </div>
-    </header>
 
-    <!-- Main Content -->
-    <main class="container">
-        <section class="order-section">
-            <div class="order-wrapper">
-                <!-- Order Summary -->
-                <div class="order-summary">
-                    <h2>Rezumat Comandă</h2>
-                    <div class="summary-items" id="summarySummary">
-                        <!-- Items vor fi afișate din JavaScript -->
-                    </div>
-                    <div class="summary-total">
-                        <strong>Total de Plată: </strong>
-                        <span id="summaryTotal">0 RON</span>
-                    </div>
+  <!-- NAVBAR -->
+  <header class="navbar" role="banner">
+    <a href="index.html" class="navbar-brand" aria-label="PrintedMagic 3D acasă">
+      <span class="navbar-logo">Printed<span>Magic</span> 3D</span>
+      <span class="navbar-tagline">Handmade cu Imprimantă 3D</span>
+    </a>
+    <nav class="navbar-nav" role="navigation" aria-label="Navigare principală">
+      <a href="index.html" class="nav-link">Acasă</a>
+      <a href="about.html" class="nav-link">Despre Noi</a>
+    </nav>
+    <div class="navbar-actions">
+      <a href="index.html" class="back-link">← Înapoi la Produse</a>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+    <section class="order-section">
+
+      <h1 class="order-page-title animate-slideup">Finalizare Comandă</h1>
+      <p class="order-page-sub animate-fadein delay-1">Verifică produsele și completează datele de livrare.</p>
+
+      <div id="orderFormWrapper">
+        <div class="order-wrapper">
+
+          <!-- ORDER SUMMARY -->
+          <aside class="order-summary-card" aria-label="Rezumat comandă">
+            <h2 class="order-summary-title">Rezumat Comandă</h2>
+            <div id="summaryItems">
+              <!-- Rendered by JS -->
+            </div>
+            <div class="summary-total-row">
+              <span class="summary-total-label">Total de Plată</span>
+              <span class="summary-total-amount" id="summaryTotal">0 RON</span>
+            </div>
+
+            <div style="margin-top:1.5rem;padding:1rem;background:rgba(196,146,60,0.08);border-radius:10px;border:1px dashed var(--accent)">
+              <p style="font-size:0.78rem;color:var(--text-muted);line-height:1.6">
+                🚚 <strong>Livrare gratuită</strong> la comenzi peste 150 RON<br>
+                📦 Estimat <strong>2–4 zile lucrătoare</strong><br>
+                🔒 Plată securizată ramburs sau card
+              </p>
+            </div>
+          </aside>
+
+          <!-- ORDER FORM -->
+          <div class="order-form-card">
+            <h2 class="order-form-title">Informații de Livrare</h2>
+
+            <form id="orderForm" novalidate>
+              <div class="form-grid-2">
+
+                <div class="form-group">
+                  <label class="form-label" for="firstName">Prenume *</label>
+                  <input class="form-input" type="text" id="firstName" name="firstName" required placeholder="Ex: Ioan" autocomplete="given-name">
                 </div>
 
-                <!-- Order Form -->
-                <div class="order-form-container">
-                    <h2>Informații de Livrare</h2>
-                    <form id="orderForm" class="order-form">
-                        <div class="form-group">
-                            <label for="firstName">Prenume *</label>
-                            <input type="text" id="firstName" name="firstName" required placeholder="Ex: Ioan">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="lastName">Nume *</label>
-                            <input type="text" id="lastName" name="lastName" required placeholder="Ex: Popescu">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Număr de Telefon *</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="Ex: 0712345678">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required placeholder="Ex: ion@example.com">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="county">Județ *</label>
-                            <input type="text" id="county" name="county" required placeholder="Ex: București">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="city">Oraș *</label>
-                            <input type="text" id="city" name="city" required placeholder="Ex: București">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="street">Strada și Numărul *</label>
-                            <input type="text" id="street" name="street" required placeholder="Ex: Str. Ștefani, Nr. 10">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="notes">Note Suplimentare (Opțional)</label>
-                            <textarea id="notes" name="notes" placeholder="Ex: Ușă neagră, clădire albă"></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-large">Plasează Comanda</button>
-                        <a href="index.html" class="btn btn-secondary">Renunță</a>
-                    </form>
+                <div class="form-group">
+                  <label class="form-label" for="lastName">Nume *</label>
+                  <input class="form-input" type="text" id="lastName" name="lastName" required placeholder="Ex: Popescu" autocomplete="family-name">
                 </div>
-            </div>
-        </section>
-    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Date de Contact</h3>
-                <div class="contact-info">
-                    <a href="tel:+40712345678" class="contact-link">
-                        <span class="contact-icon">📱</span>
-                        <span>+40 712 345 678</span>
-                    </a>
-                    <a href="mailto:info@printedmagic.ro" class="contact-link">
-                        <span class="contact-icon">✉️</span>
-                        <span>info@printedmagic.ro</span>
-                    </a>
-                    <a href="https://instagram.com/printedmagic3d" target="_blank" class="contact-link">
-                        <span class="contact-icon">📷</span>
-                        <span>@printedmagic3d</span>
-                    </a>
+                <div class="form-group">
+                  <label class="form-label" for="phone">Telefon *</label>
+                  <input class="form-input" type="tel" id="phone" name="phone" required placeholder="0712 345 678" autocomplete="tel">
                 </div>
-            </div>
-            <div class="footer-section">
-                <p>&copy; 2026 PrintedMagic 3D. Toate drepturile rezervate.</p>
-            </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="email">Email *</label>
+                  <input class="form-input" type="email" id="email" name="email" required placeholder="ion@example.com" autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="county">Județ *</label>
+                  <input class="form-input" type="text" id="county" name="county" required placeholder="Ex: București" autocomplete="address-level1">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="city">Oraș *</label>
+                  <input class="form-input" type="text" id="city" name="city" required placeholder="Ex: Sector 3" autocomplete="address-level2">
+                </div>
+
+                <div class="form-group full">
+                  <label class="form-label" for="street">Stradă și Număr *</label>
+                  <input class="form-input" type="text" id="street" name="street" required placeholder="Ex: Str. Ștefan cel Mare, Nr. 10, Bl. A2, Ap. 5" autocomplete="street-address">
+                </div>
+
+                <div class="form-group full">
+                  <label class="form-label" for="notes">Note Suplimentare (Opțional)</label>
+                  <textarea class="form-textarea" id="notes" name="notes" placeholder="Ex: Ușă neagră, interfon 12, livreazî între 10-18"></textarea>
+                </div>
+
+              </div>
+
+              <div class="form-submit-row">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  ✓ Plasează Comanda
+                </button>
+                <a href="index.html" class="btn btn-secondary">Renunță</a>
+              </div>
+
+              <p style="margin-top:1.2rem;font-size:0.75rem;color:var(--text-muted);line-height:1.6">
+                Prin plasarea comenzii, ești de acord cu <strong>termenii și condițiile</strong> noastre. Datele tale personale sunt protejate conform GDPR.
+              </p>
+            </form>
+          </div>
+
         </div>
-    </footer>
+      </div>
 
-    <script src="script.js"></script>
+      <!-- SUCCESS STATE -->
+      <div class="order-success" id="orderSuccess" role="alert" aria-live="polite">
+        <div class="success-icon">🎉</div>
+        <h2 class="success-title">Comandă Plasată cu Succes!</h2>
+        <p class="success-sub">Vei primi un email de confirmare în scurt timp. Echipa noastră va pregăti comanda ta cu drag.</p>
+        <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:2rem">Timp estimat de livrare: <strong>2–4 zile lucrătoare</strong></p>
+        <a href="index.html" class="btn btn-primary btn-lg">← Înapoi la Produse</a>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-name">Printed<span>Magic</span> 3D</div>
+          <p class="footer-brand-desc">Produse unice create cu pasiune, precizie și tehnologie de ultimă generație.</p>
+        </div>
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <div class="footer-links">
+            <a href="tel:+40746468138" class="footer-link"><span class="link-icon">📱</span> +40 746 468 138</a>
+            <a href="mailto:info@printedmagic.ro" class="footer-link"><span class="link-icon">✉️</span> info@printedmagic.ro</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Urmărește-ne</div>
+          <div class="social-row">
+            <a href="https://instagram.com/printedmagic3d" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">📸</a>
+            <a href="https://facebook.com/printedmagic3d" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">👍</a>
+            <a href="https://tiktok.com/@printedmagic3d" target="_blank" rel="noopener" class="social-btn" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 PrintedMagic 3D. Toate drepturile rezervate.</p>
+        <a href="index.html" class="footer-link">Acasă</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

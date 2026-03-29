@@ -1,209 +1,209 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopHub - Magazin Online</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrintedMagic 3D — Produse Unice cu Imprimantă 3D</title>
+  <meta name="description" content="Magazin online de produse handmade create cu imprimantă 3D. Figurine, decorațiuni, accesorii unice.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Banner -->
-    <header class="banner">
-        <div class="banner-content">
-            <h1 class="banner-title">🎨 PrintedMagic 3D</h1>
-            <p class="banner-subtitle">Produse Unice Create cu Imprimantă 3D</p>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" role="banner">
+    <a href="index.html" class="navbar-brand" aria-label="PrintedMagic 3D acasă">
+      <span class="navbar-logo">Printed<span>Magic</span> 3D</span>
+      <span class="navbar-tagline">Handmade cu Imprimantă 3D</span>
+    </a>
+
+    <nav class="navbar-nav" role="navigation" aria-label="Navigare principală">
+      <a href="index.html" class="nav-link active" aria-current="page">Acasă</a>
+      <a href="about.html" class="nav-link">Despre Noi</a>
+    </nav>
+
+    <div class="navbar-actions">
+      <button class="cart-btn" id="cartBtn" aria-label="Coș de cumpărături">
+        🛒 Coș
+        <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO SLIDER ===== -->
+  <section class="hero" aria-label="Hero slider">
+    <div class="slider-container">
+
+      <div class="slide active">
+        <div class="slide-bg"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <div class="slide-eyebrow">Colecția 2026</div>
+          <h1 class="slide-title">Magia Imprimării în 3 Dimensiuni</h1>
+          <p class="slide-sub">Produse unice, create cu pasiune și precizie digitală</p>
+          <a href="#products" class="slide-cta">Descoperă Colecția ↓</a>
         </div>
-        <nav class="banner-nav">
-            <a href="index.html" class="nav-link active">Acasă</a>
-            <a href="about.html" class="nav-link">Despre Noi</a>
+        <div class="slide-deco">🐉</div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-bg"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <div class="slide-eyebrow">Design Premium</div>
+          <h2 class="slide-title">Fiecare Detaliu Contează</h2>
+          <p class="slide-sub">Design profesional gândit cu atenție la fiecare milimetru</p>
+          <a href="#products" class="slide-cta">Vezi Produsele →</a>
+        </div>
+        <div class="slide-deco">✨</div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-bg"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <div class="slide-eyebrow">Livrare Rapidă</div>
+          <h2 class="slide-title">La Ușa Ta în 2–4 Zile</h2>
+          <p class="slide-sub">Ambalaj profesional, curierat rapid pe toată România</p>
+          <a href="#products" class="slide-cta">Comandă Acum →</a>
+        </div>
+        <div class="slide-deco">🚀</div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-bg"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <div class="slide-eyebrow">Personalizare</div>
+          <h2 class="slide-title">Creează Exact Ce Visezi</h2>
+          <p class="slide-sub">Culori, dimensiuni și forme la alegerea ta — orice e posibil</p>
+          <a href="#feedback" class="slide-cta">Află Cum →</a>
+        </div>
+        <div class="slide-deco">🎨</div>
+      </div>
+
+    </div>
+
+    <button class="slider-arrow slider-prev" id="sliderPrev" aria-label="Slide anterior">❮</button>
+    <button class="slider-arrow slider-next" id="sliderNext" aria-label="Slide următor">❯</button>
+    <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Slide navigation"></div>
+  </section>
+
+  <!-- ===== MAIN ===== -->
+  <main class="container">
+
+    <!-- SEARCH -->
+    <section class="search-section" aria-label="Căutare produse">
+      <div class="search-wrapper">
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input
+          type="search"
+          id="searchInput"
+          class="search-input"
+          placeholder="Caută produse..."
+          autocomplete="off"
+          aria-label="Caută produse"
+        >
+        <div class="search-results-dropdown" id="searchDropdown" role="listbox" aria-label="Rezultate căutare"></div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products-section" id="products" aria-label="Produse disponibile">
+      <div class="section-header scroll-reveal">
+        <div class="section-eyebrow">Colecția Noastră</div>
+        <h2 class="section-title">Produse Disponibile</h2>
+      </div>
+      <div class="products-grid" id="productsGrid" role="list">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- FEEDBACK CTA -->
+    <section id="feedback" class="feedback-section scroll-reveal" aria-label="Contactează-ne">
+      <div class="feedback-eyebrow">Personalizare</div>
+      <h2 class="feedback-title">Nu te-am convins?</h2>
+      <p class="feedback-sub">Dacă ai o idee sau un produs special în minte, spune-ne și îl facem realitate.</p>
+      <button class="btn btn-primary btn-lg" id="openFeedbackPopup">Spune-ne ce ți-ai dori</button>
+    </section>
+
+  </main>
+
+  <!-- CHATBOT MODAL -->
+  <div class="popup-overlay" id="chatbotModal" role="dialog" aria-modal="true" aria-label="Asistent AI">
+    <div class="popup-card chatbot-card">
+      <h3>Asistent AI PrintedMagic 3D 🤖</h3>
+      <div class="chatbot-messages" id="chatbotMessages"></div>
+      <div class="chatbot-input-row">
+        <input type="text" id="chatbotInput" placeholder="Scrie mesajul tău..." aria-label="Mesaj pentru asistent">
+        <button id="chatbotSend" class="btn btn-primary">Trimite</button>
+      </div>
+      <button id="closeChatbotModal" class="popup-close-btn">Închide</button>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-name">Printed<span>Magic</span> 3D</div>
+          <p class="footer-brand-desc">Produse unice create cu pasiune, precizie și tehnologie de ultimă generație.</p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <div class="footer-links">
+            <a href="tel:+40746468138" class="footer-link">
+              <span class="link-icon">📱</span> +40 746 468 138
+            </a>
+            <a href="mailto:info@printedmagic.ro" class="footer-link">
+              <span class="link-icon">✉️</span> info@printedmagic.ro
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Urmărește-ne</div>
+          <div class="social-row">
+            <a href="https://instagram.com/printedmagic3d" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="url(#instagram-gradient)"/>
+                <circle cx="12" cy="12" r="3" stroke="white" stroke-width="1"/>
+                <circle cx="17" cy="7" r="1.5" fill="white"/>
+                <defs>
+                  <linearGradient id="instagram-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#833ab4;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#fd1d1d;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#fcb045;stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </a>
+            <a href="https://facebook.com/printedmagic3d" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" rx="4" fill="#1877F2"/>
+                <path d="M12.017 18.285V12.54H14.582L14.95 9.969H12.017V8.573C12.017 7.935 12.184 7.513 13.042 7.513H14.95V5H12.017C9.925 5 8.472 6.367 8.472 8.273V9.969H6V12.54H8.472V18.285H12.017Z" fill="white"/>
+              </svg>
+            </a>
+            <a href="https://tiktok.com/@printedmagic3d" target="_blank" rel="noopener" class="social-btn" aria-label="TikTok">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" rx="4" fill="black"/>
+                <path d="M12.525 7.695C11.866 7.283 11.446 6.639 11.446 5.945V5.5H9.719V15.5C9.719 16.881 8.6 18 7.219 18S4.719 16.881 4.719 15.5S5.838 13 7.219 13C7.475 13 7.719 13.05 7.944 13.14V10.86C7.719 10.77 7.475 10.72 7.219 10.72C5.838 10.72 4.719 9.601 4.719 8.22S5.838 5.72 7.219 5.72V7.445C7.219 8.826 8.338 9.945 9.719 9.945C10.378 9.945 10.798 10.589 10.798 11.283V15.5C10.798 16.881 11.917 18 13.298 18S15.798 16.881 15.798 15.5V9.5C15.798 8.119 14.679 7 13.298 7V8.725C13.298 9.106 13.917 9.725 14.298 9.725C14.679 9.725 15.298 9.106 15.298 8.725V5.5H13.571V7.445C13.571 8.826 14.69 9.945 16.071 9.945V7.22C14.69 7.22 13.571 6.101 13.571 4.72V4.275H11.844V5.945C11.844 6.639 12.184 7.283 12.843 7.695H12.525Z" fill="white"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 PrintedMagic 3D. Toate drepturile rezervate.</p>
+        <nav aria-label="Footer navigation">
+          <a href="about.html" class="footer-link">Despre Noi</a>
         </nav>
-        <div class="cart-icon-container">
-            <button class="cart-icon" id="cartBtn">
-                <span class="cart-icon-text">🛒</span>
-                <span class="cart-count" id="cartCount">0</span>
-            </button>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="container">        <!-- Banner Slider -->
-        <section class="banner-slider-section">
-            <div class="banner-slider">
-                <div class="slider-container">
-                    <div class="slide active">
-                        <div class="slide-content">
-                            <h2>Produse 3d premium</h2>
-                            <p>Creații unique cu imprimantă 3D de ultimă generație</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide-content">
-                            <h2>Design Profesional</h2>
-                            <p>Fiecare produs este gândite cu atenție la detaliu</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide-content">
-                            <h2>Livrare Rapidă</h2>
-                            <p>Produsele tale ajung la tine în timp scurt</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide-content">
-                            <h2>Personalizare Completă</h2>
-                            <p>Alege culori, dimensiuni și variante custom</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="slider-btn slider-prev" id="sliderPrev">❮</button>
-                <button class="slider-btn slider-next" id="sliderNext">❯</button>
-                <div class="slider-dots" id="sliderDots"></div>
-            </div>
-        </section>
-
-        <!-- Search Bar -->
-        <section class="search-section">
-            <div class="search-container">
-                <input 
-                    type="text" 
-                    id="searchInput" 
-                    class="search-input" 
-                    placeholder="🔍 Cauta produse..."
-                    autocomplete="off"
-                >
-                <div class="search-results" id="searchResults"></div>
-            </div>
-        </section>
-        <!-- Products Grid -->
-        <section class="products-section">
-            <h2 class="section-title">Produse Disponibile</h2>
-            <div class="products-grid" id="productsGrid">
-                <!-- Produsele vor fi încărcate din JavaScript -->
-            </div>
-        </section>
-
-        <!-- Feedback CTA -->
-        <section class="feedback-section" id="feedbackSection">
-            <h2 class="section-title">Nu te-am convins?</h2>
-            <p>Dacă ai o idee sau un produs special în minte, spune-ne și îl facem realitate.</p>
-            <button id="openFeedbackPopup" class="btn btn-secondary">Spune-ne ce ți-ai dori</button>
-        </section>
-
-        <div class="popup-overlay" id="feedbackPopup" style="display:none;">
-            <div class="popup-card" id="feedbackPopupCard">
-                <h3>Spune-ne ce ți-ai dori</h3>
-                <p id="feedbackPopupModeText">Alege una din opțiuni:</p>
-                <div class="popup-actions">
-                    <button id="feedbackCall" class="btn btn-primary">Apel</button>
-                    <button id="feedbackEmail" class="btn btn-secondary">Scrie-ne</button>
-                </div>
-                <button id="closeFeedbackPopup" class="popup-close">Închide</button>
-            </div>
-        </div>
-    </main>
-
-    <!-- Product Details Modal -->
-    <div class="modal" id="productModal">
-        <div class="modal-content modal-lg">
-            <div class="modal-header">
-                <h2 id="productModalTitle">Detalii Produs</h2>
-                <button class="close-modal" id="closeProductBtn">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div class="product-details-container">
-                    <!-- Product Images -->
-                    <div class="product-images">
-                        <div class="main-image" id="mainImage">🐉</div>
-                        <div class="thumbnail-images" id="thumbnailImages">
-                        </div>
-                    </div>
-
-                    <!-- Product Info -->
-                    <div class="product-info">
-                        <h2 id="productName">Produs</h2>
-                        <div class="product-price-section">
-                            <span class="product-price-large" id="productPrice">0 RON</span>
-                        </div>
-
-                        <div class="product-specifications">
-                            <div class="spec-item">
-                                <strong>Dimensiuni:</strong>
-                                <span id="productDimensions">-</span>
-                            </div>
-                            <div class="spec-item">
-                                <strong>Material:</strong>
-                                <span id="productMaterial">-</span>
-                            </div>
-                        </div>
-
-                        <div class="product-description-full" id="productFullDescription">
-                        </div>
-
-                        <!-- Quantity and Add to Cart -->
-                        <div class="product-quantity-section">
-                            <label>Cantitate:</label>
-                            <div class="quantity-control">
-                                <button id="decrementBtn" class="quantity-btn-large">−</button>
-                                <input type="number" id="quantityInput" value="1" min="1">
-                                <button id="incrementBtn" class="quantity-btn-large">+</button>
-                            </div>
-                        </div>
-
-                        <button class="btn btn-primary btn-large" id="addToCartModalBtn">Adaugă în Coș</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </footer>
 
-    <!-- Shopping Cart Modal -->
-    <div class="modal" id="cartModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Coșul Dumneavoastră</h2>
-                <button class="close-modal" id="closeCartBtn">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div class="cart-items" id="cartItems">
-                    <p class="empty-cart">Coșul este gol</p>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <div class="cart-total">
-                    <strong>Total: </strong>
-                    <span id="cartTotal">0 RON</span>
-                </div>
-                <button class="btn btn-primary" id="checkoutBtn">Plasează Comanda</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Date de Contact</h3>
-                <div class="contact-info">
-                    <a href="tel:+40746468138" class="contact-link">
-                        <span class="contact-icon">📱</span>
-                        <span>+40 746 468 138</span>
-                    </a>
-                    <a href="mailto:info@printedmagic.ro" class="contact-link">
-                        <span class="contact-icon">✉️</span>
-                        <span>info@printedmagic.ro</span>
-                    </a>
-                    <a href="https://instagram.com/printedmagic3d" target="_blank" class="contact-link">
-                        <span class="contact-icon">📷</span>
-                        <span>@printedmagic3d</span>
-                    </a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <p>&copy; 2026 PrintedMagic 3D. Toate drepturile rezervate.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
