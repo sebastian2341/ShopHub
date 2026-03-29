@@ -1127,6 +1127,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (isAbout) {
     initReviewForm();
     initScrollReveal();
+    initCartModal();
   }
 
   // Scroll reveal for static elements
