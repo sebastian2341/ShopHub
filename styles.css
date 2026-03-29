@@ -2168,6 +2168,16 @@ input, textarea, select { font-family: var(--font-body); outline: none; }
     font-size: 1.1rem;
   }
 
+  /* Order */
+  .order-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .order-summary-card {
+    position: static;
+  }
+
   /* Modals */
   .modal-overlay {
     padding: 1rem;
