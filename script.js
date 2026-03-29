@@ -308,7 +308,7 @@ function initNavbar() {
 
   // Hamburger menu
   const hamburgerBtn = document.getElementById('hamburgerBtn');
-  const navbarNav = document.querySelector('.navbar-nav');
+  const navbarNav = document.querySelector('.navbar-nav-mobile');
   if (hamburgerBtn && navbarNav) {
     hamburgerBtn.addEventListener('click', () => {
       hamburgerBtn.classList.toggle('active');

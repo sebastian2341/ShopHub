@@ -11,10 +11,24 @@
 
   <!-- ===== NAVBAR ===== -->
   <header class="navbar" role="banner">
-    <a href="index.html" class="navbar-brand" aria-label="PrintedMagic 3D acasă">
-      <span class="navbar-logo">Printed<span>Magic</span> 3D</span>
-      <span class="navbar-tagline">Handmade cu Imprimantă 3D</span>
-    </a>
+    <div class="navbar-top">
+      <a href="index.html" class="navbar-brand" aria-label="PrintedMagic 3D acasă">
+        <span class="navbar-logo">Printed<span>Magic</span> 3D</span>
+        <span class="navbar-tagline">Handmade cu Imprimantă 3D</span>
+      </a>
+
+      <nav class="navbar-nav" role="navigation" aria-label="Navigare principală">
+        <a href="index.html" class="nav-link active" aria-current="page">Acasă</a>
+        <a href="about.html" class="nav-link">Despre Noi</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Coș de cumpărături">
+          🛒 Coș
+          <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+        </button>
+      </div>
+    </div>
 
     <button class="hamburger-btn" id="hamburgerBtn" aria-label="Meniu" aria-expanded="false">
       <span class="hamburger-line"></span>
@@ -22,17 +36,10 @@
       <span class="hamburger-line"></span>
     </button>
 
-    <nav class="navbar-nav" role="navigation" aria-label="Navigare principală">
+    <nav class="navbar-nav-mobile" role="navigation" aria-label="Navigare principală">
       <a href="index.html" class="nav-link active" aria-current="page">Acasă</a>
       <a href="about.html" class="nav-link">Despre Noi</a>
     </nav>
-
-    <div class="navbar-actions">
-      <button class="cart-btn" id="cartBtn" aria-label="Coș de cumpărături">
-        🛒 Coș
-        <span class="cart-count" id="cartCount" aria-live="polite">0</span>
-      </button>
-    </div>
   </header>
 
   <!-- ===== HERO SLIDER ===== -->
@@ -144,6 +151,23 @@
         <button id="chatbotSend" class="btn btn-primary">Trimite</button>
       </div>
       <button id="closeChatbotModal" class="popup-close-btn">Închide</button>
+    </div>
+  </div>
+
+  <!-- FEEDBACK POPUP -->
+  <div class="popup-overlay" id="feedbackPopup" role="dialog" aria-modal="true" aria-label="Solicitare produs personalizat">
+    <div class="popup-card">
+      <h3>Spune-ne ce ți-ai dori! 🎨</h3>
+      <p>Ai o idee pentru un produs personalizat? Contactează-ne pentru a discuta detaliile!</p>
+      <div class="feedback-options">
+        <button id="feedbackCall" class="btn btn-primary btn-lg">
+          <span class="link-icon">📱</span> Sună-ne
+        </button>
+        <button id="feedbackEmail" class="btn btn-secondary btn-lg">
+          <span class="link-icon">✉️</span> Trimite email
+        </button>
+      </div>
+      <button id="closeFeedbackPopup" class="popup-close-btn">Închide</button>
     </div>
   </div>
 
